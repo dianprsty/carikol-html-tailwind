@@ -4,11 +4,336 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/output.css" />
+    <link rel="stylesheet" href="../styles/home.css" />
     <title>Carikol</title>
   </head>
   <body>
-    <main class="w-screen min-h-screen flex bg-white justify-center items-center">
-      <p class="text-4xl font-bold italic text-teal-950">Home</p>
-    </main>
+    <body class="bg-teal-50">
+      <header class="sticky top-0 shadow-sm bg-teal-50">
+        <nav class="w-11/12 max-w-6xl py-4 mx-auto md:w-10/12">
+          <div class="flex items-center justify-between h-16">
+            <div class="text-2xl font-bold text-teal-600">CariKOL</div>
+
+            <div class="items-center hidden gap-12 md:flex">
+              <details class="relative group">
+                <summary
+                  class="flex items-center gap-2 font-medium text-gray-700 list-none cursor-pointer hover:text-teal-600"
+                >
+                  For KOL
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    class="size-4"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </summary>
+                <div
+                  class="absolute z-50 mt-2 bg-white rounded-md shadow-md w-max"
+                >
+                  <a
+                    href="#"
+                    class="block p-2 px-4 text-sm hover:bg-teal-600 hover:text-white"
+                    >Buat Rate Card Tiktok
+                  </a>
+                  <a
+                    href="#"
+                    class="block p-2 px-4 text-sm hover:bg-teal-600 hover:text-white"
+                    >Buat Rate Card Instagram</a
+                  >
+                  <a
+                    href="#"
+                    class="block p-2 px-4 text-sm hover:bg-teal-600 hover:text-white"
+                    >Buat Rate Card Youtube</a
+                  >
+                </div>
+              </details>
+
+              <details class="relative group">
+                <summary
+                  class="flex items-center gap-2 font-medium text-gray-700 list-none cursor-pointer hover:text-teal-600"
+                >
+                  For Brand
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    class="size-4"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </summary>
+                <div
+                  class="absolute z-50 mt-2 bg-white rounded-md shadow-md w-max"
+                >
+                  <a
+                    href="#"
+                    class="block p-2 px-4 text-sm hover:bg-teal-600 hover:text-white"
+                    >Cek Rate Card Tiktok
+                  </a>
+                  <a
+                    href="#"
+                    class="block p-2 px-4 text-sm hover:bg-teal-600 hover:text-white"
+                    >Cek Rate Card Instagram</a
+                  >
+                  <a
+                    href="#"
+                    class="block p-2 px-4 text-sm hover:bg-teal-600 hover:text-white"
+                    >Cek Rate Card Youtube</a
+                  >
+                </div>
+              </details>
+
+              <div class="flex items-center gap-4">
+                <a
+                  href="#"
+                  class="block px-3 py-2 text-center text-white bg-teal-600 border-2 border-teal-600 rounded-md hover:bg-teal-700"
+                  >Login</a
+                >
+                <a
+                  href="#"
+                  class="block px-3 py-2 text-center text-teal-600 border-2 border-teal-600 rounded-md"
+                  >Register</a
+                >
+              </div>
+            </div>
+
+            <details class="relative md:hidden group open">
+              <summary class="flex items-center list-none cursor-pointer">
+                <svg
+                  class="w-6 h-6 text-gray-700 group-has-[open]:hidden group-has-[closed]:hidden"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </summary>
+
+              <div
+                class="absolute right-0 z-50 p-4 mt-2 space-y-4 text-sm bg-white rounded-md shadow-lg w-60"
+              >
+                <details>
+                  <summary class="font-medium text-gray-800 cursor-pointer">
+                    For Brand
+                  </summary>
+                  <div class="pl-4 mt-1 space-y-1">
+                    <a href="#" class="block hover:text-teal-600">Cari KOL</a>
+                    <a href="#" class="block hover:text-teal-600"
+                      >Kelola Kampanye</a
+                    >
+                    <a href="#" class="block hover:text-teal-600">Analitik</a>
+                  </div>
+                </details>
+
+                <details>
+                  <summary class="font-medium text-gray-800 cursor-pointer">
+                    For KOL
+                  </summary>
+                  <div class="pl-4 mt-1 space-y-1">
+                    <a href="#" class="block hover:text-teal-600"
+                      >Buat Rate Card</a
+                    >
+                    <a href="#" class="block hover:text-teal-600"
+                      >Job Listing</a
+                    >
+                    <a href="#" class="block hover:text-teal-600"
+                      >Tips & Edukasi</a
+                    >
+                  </div>
+                </details>
+
+                <div
+                  class="flex flex-col gap-2 pt-2 border-t border-gray-200 md:flex-row"
+                >
+                  <a
+                    href="#"
+                    class="block py-2 text-center text-white bg-teal-600 border-2 border-teal-600 rounded-md hover:bg-teal-700"
+                    >Login</a
+                  >
+                  <a
+                    href="#"
+                    class="block py-2 text-center text-teal-600 border-2 border-teal-600 rounded-md"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </details>
+          </div>
+        </nav>
+      </header>
+      <main class="w-screen">
+        <section class="w-11/12 max-w-6xl py-8 mx-auto md:py-12 md:w-10/12">
+          <div class="flex flex-col-reverse items-center gap-8 sm:flex-row">
+            <div
+              class="flex flex-col items-center justify-center sm:w-1/2 md:mb-0 sm:items-start"
+            >
+              <h1
+                class="mb-4 font-bold text-center text-teal-600 sm:text-start text-4xl/snug sm:text-3xl/snug md:mb-3 lg:mb-3 md:text-4xl/snug lg:text-5xl/snug xl:text-6xl/snug"
+              >
+                Buat Rate Card, Mudah Dan Cepat
+              </h1>
+              <p
+                class="max-w-md mx-auto mb-4 text-sm text-center text-gray-600 sm:mx-0 sm:text-start lg:text-lg md:text-base lg:mb-8 md:mb-4"
+              >
+                CariKOL bantu influencer membuat rate card profesional hanya
+                dalam hitungan menit. Tanpa repot, tanpa ribet.
+              </p>
+              <button
+                class="px-4 py-2 text-sm font-medium text-white bg-teal-600 rounded-lg md:text-base md:px-6 md:py-3"
+              >
+                Buat Rate Card Sekarang!
+              </button>
+            </div>
+            <div class="w-3/4 mx-auto md:w-1/2">
+              <img
+                src="../assets/images/hero.png"
+                alt="Dashboard Preview"
+                class="w-full"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <section class="py-12 bg-teal-600 md:py-16">
+        <div class="w-11/12 max-w-6xl py-8 mx-auto md:py-12 md:w-10/12">
+          <p class="mb-8 text-lg text-center text-white md:mb-12 md:text-2xl">
+            Brand yang Telah Bekerjasama
+          </p>
+          <div class="flex w-10/12 mx-auto overflow-hidden flex-nowrap">
+            <span
+              class="flex justify-between min-w-[200%] gap-8 mr-16 animate-marquee"
+            >
+              <img
+                src="../assets/images/brand1.png"
+                alt="Brand 1"
+                class="h-6 md:h-8 lg:h-12"
+              />
+              <img
+                src="../assets/images/brand2.png"
+                alt="Brand 2"
+                class="h-6 md:h-8 lg:h-12"
+              />
+              <img
+                src="../assets/images/brand3.png"
+                alt="Brand 3"
+                class="h-6 md:h-8 lg:h-12"
+              />
+              <img
+                src="../assets/images/brand4.png"
+                alt="Brand 4"
+                class="h-6 md:h-8 lg:h-12"
+              />
+              <img
+                src="../assets/images/brand5.png"
+                alt="Brand 5"
+                class="h-6 md:h-8 lg:h-12"
+              />
+              <img
+                src="../assets/images/brand1.png"
+                alt="Brand 1"
+                class="h-6 md:h-8 lg:h-12"
+              />
+              <img
+                src="../assets/images/brand2.png"
+                alt="Brand 2"
+                class="h-6 md:h-8 lg:h-12"
+              />
+              <img
+                src="../assets/images/brand3.png"
+                alt="Brand 3"
+                class="h-6 md:h-8 lg:h-12"
+              />
+              <img
+                src="../assets/images/brand4.png"
+                alt="Brand 4"
+                class="h-6 md:h-8 lg:h-12"
+              />
+              <img
+                src="../assets/images/brand5.png"
+                alt="Brand 5"
+                class="h-6 md:h-8 lg:h-12"
+              />
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="w-11/12 max-w-6xl py-16 mx-auto md:py-12 md:w-10/12">
+        <div class="mb-12 text-center">
+          <h2
+            class="mb-2 text-2xl font-bold text-teal-600 md:text-3xl lg:text-4xl md:mb-4"
+          >
+            Penuhi Semua Kebutuhan KOL Anda
+          </h2>
+          <p class="text-gray-600 md:text-lg">
+            Buat Rate Card dan dapatkan insight yang tepat
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-8 text-center md:grid-cols-4">
+          <div class="flex flex-col gap-2">
+            <h3
+              class="text-3xl font-bold text-teal-600 md:text-4xl lg:text-5xl"
+            >
+              17.6M+
+            </h3>
+            <p class="text-base text-gray-600 xl:text-lg">KOL di Indonesia</p>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h3
+              class="text-3xl font-bold text-teal-600 md:text-4xl lg:text-5xl"
+            >
+              69.733+
+            </h3>
+            <p class="text-base text-gray-600 xl:text-lg">
+              KOL Telah Bergabung
+            </p>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h3
+              class="text-3xl font-bold text-teal-600 md:text-4xl lg:text-5xl"
+            >
+              55.187+
+            </h3>
+            <p class="text-base text-gray-600 xl:text-lg">KOL Bawa Rate Card</p>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h3
+              class="text-3xl font-bold text-teal-600 md:text-4xl lg:text-5xl"
+            >
+              2.045+
+            </h3>
+            <p class="text-base text-gray-600 xl:text-lg">
+              Brand Telah Bergabung
+            </p>
+          </div>
+        </div>
+      </section>
+      <script>
+        const detailsElements = document.querySelectorAll("details");
+
+        document.addEventListener("click", function (event) {
+          detailsElements.forEach(function (details) {
+            if (!details.contains(event.target)) {
+              details.removeAttribute("open");
+            }
+          });
+        });
+      </script>
+    </body>
   </body>
 </html>
