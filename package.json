@@ -4,8 +4,8 @@
     "tailwindcss": "^4.1.4"
   },
   "scripts": {
-    "tw-build": "npx tailwindcss -i ./styles/input.css -o ./styles/output.css",
-    "tw-watch": "npx tailwindcss -i ./styles/input.css -o ./styles/output.css --watch"
+    "tw-build": "npx tailwindcss -i ./resources/css/input.css -o ./resources/css/output.css",
+    "tw-watch": "npx tailwindcss -i ./resources/css/input.css -o ./resources/css/output.css --watch"
   }
 
 }
