@@ -1,6 +1,6 @@
 $(document).ready(function () {  
-  $("#head-link").load("./Components/headLink/link.htm", function () {
-      $("#app-root").load("./Components/Pages/home.htm", function () {
+  $("#head-link").load("./Components/headLink/link.html", function () {
+      $("#app-root").load("./Components/Pages/home.html", function () {
        // Faq
        document.addEventListener("alpine:init", () => {
         Alpine.store("accordion", {
@@ -29,7 +29,7 @@ $(document).ready(function () {
         //  end faq
 
   });
-  $("#nav").load("./Components/navbar.htm", function () {
+  $("#nav").load("./Components/navbar.html", function () {
 
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
