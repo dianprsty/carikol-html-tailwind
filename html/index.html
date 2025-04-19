@@ -6,10 +6,14 @@
     <link rel="stylesheet" href="../styles/output.css" />
     <link rel="stylesheet" href="../styles/home.css" />
     <title>Carikol</title>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
   </head>
   <body>
     <body class="bg-teal-50">
-      <header class="sticky top-0 shadow-sm bg-teal-50">
+      <header class="sticky top-0 z-50 shadow-sm bg-teal-50">
         <nav class="w-11/12 max-w-6xl py-4 mx-auto md:w-10/12">
           <div class="flex items-center justify-between h-16">
             <div class="text-2xl font-bold text-teal-600">CariKOL</div>
@@ -161,7 +165,7 @@
                   class="flex flex-col gap-2 pt-2 border-t border-gray-200 md:flex-row"
                 >
                   <a
-                    href="#"
+                    href="./login.html"
                     class="block py-2 text-center text-white bg-teal-600 border-2 border-teal-600 rounded-md hover:bg-teal-700"
                     >Login</a
                   >
@@ -323,19 +327,498 @@
             </div>
           </div>
         </section>
+
+        <section class="advertise -z-10">
+          <div class="mx-auto p-0">
+            <div
+              class="relative overflow-hidden px-6 pt-1 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-0 lg:pt-0"
+            >
+              <div
+                class="mx-auto text-center lg:mx-10 lg:flex-auto lg:py-32 lg:text-left justify-content-end animate-slide-left"
+              >
+                <h2 class="text-base/7 font-black text-teal-600">
+                  Buat. Bagikan. Deal.
+                </h2>
+                <p
+                  class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl"
+                >
+                  Buat Rate Card Profesional Secara Instan
+                </p>
+                <p class="mt-6 text-lg/8 text-pretty text-gray-600">
+                  Tak perlu desain manual atau ribet cari template.<br />Dengan
+                  CariKOL, influencer bisa membuat rate card profesional hanya
+                  dalam<br />hitungan menit. Cukup isi data, pilih gaya, dan
+                  sistem otomatis menyusun<br />semuanya dengan layout elegan
+                  dan terpercaya.
+                </p>
+                <div
+                  class="flex items-center py-5 justify-center gap-x-6 lg:justify-start"
+                >
+                  <a
+                    href="#"
+                    class="rounded-md bg-teal-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-gray-100 hover:text-teal-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    >Get started</a
+                  >
+                  <a href="#" class="text-sm/6 font-semibold text-teal-600"
+                    >Learn more <span aria-hidden="true">→</span></a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="relative -mr-10 mt-1 h-80 lg:mt-8 lg:w-1/2 animate-slide-right"
+              >
+                <img
+                  class="absolute top-0 left-0 w-full max-w-none rounded-xl bg-teal-600/5 ring-1 ring-white/10"
+                  src="/assets/images/advertise_1.png"
+                  alt="App screenshot"
+                  width="1824"
+                  height="1080"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-auto mb-28">
+            <div
+              class="relative overflow-hidden px-6 pt-1 sm:px-16 lg:flex lg:gap-x-20 lg:px-0 lg:pt-0"
+            >
+              <div
+                class="relative -ml-10 mt-1 h-80 lg:mt-8 lg:w-1/2 animate-slide-left"
+              >
+                <img
+                  class="absolute top-0 left-0 w-full max-w-none rounded-xl bg-white/5 ring-1 ring-white/10"
+                  src="/assets/images/advertise_2.png"
+                  alt="App screenshot"
+                  width="1824"
+                  height="1080"
+                />
+              </div>
+
+              <div
+                class="mx-auto text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left lg:w-1/2 animate-slide-right"
+              >
+                <h2 class="text-base/7 font-semibold text-teal-600">
+                  Proses lebih singkat, hasil lebih maksimal.
+                </h2>
+                <p
+                  class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl"
+                >
+                  Optimasi Profil untuk Brand
+                </p>
+                <p class="mt-6 text-lg/8 text-pretty text-gray-600">
+                  CariKOL tak hanya soal rate card — profil kamu juga
+                  dioptimalkan agar menarik bagi brand. Fitur ini memungkinkan
+                  influencer menampilkan portofolio, statistik, dan pengalaman
+                  kolaborasi sebelumnya dalam satu halaman yang rapi dan
+                  informatif.
+                </p>
+                <div
+                  class="flex items-center py-5 justify-center gap-x-6 lg:justify-start"
+                >
+                  <a
+                    href="#"
+                    class="rounded-md bg-teal-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-gray-100 hover:text-teal-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    >Get started</a
+                  >
+                  <a href="#" class="text-sm/6 font-semibold text-teal-600"
+                    >Learn more <span aria-hidden="true">→</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-24 sm:py-32 -z-30 bg-white">
+            <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+              <h2
+                class="text-center text-base/7 font-semibold text-teal-600 animate-fade-up"
+              >
+                Deploy faster
+              </h2>
+              <p
+                class="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-black sm:text-5xl animate-fade-up"
+              >
+                Tampil Maksimal di Mata Brand
+              </p>
+              <div
+                class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2"
+              >
+                <div class="relative lg:row-span-2 animate-slide-right">
+                  <div
+                    class="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"
+                  ></div>
+                  <div
+                    class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]"
+                  >
+                    <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                      <p
+                        class="mt-2 text-lg font-medium tracking-tight text-teal-600 max-lg:text-center animate-fade-up"
+                      >
+                        Profil Keren, Deal Makin Lancar
+                      </p>
+                      <p
+                        class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center animate-fade-up"
+                      >
+                        Tingkatkan peluang kolaborasi dengan profil influencer
+                        yang tampil profesional, rapi, dan meyakinkan.
+                      </p>
+                    </div>
+                    <div
+                      class="@container relative min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm"
+                    >
+                      <div
+                        class="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl"
+                      >
+                        <img
+                          class="size-full object-cover object-top"
+                          src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-mobile-friendly.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 lg:rounded-l-[2rem]"
+                  ></div>
+                </div>
+                <div class="relative max-lg:row-start-1 animate-slide-left">
+                  <div
+                    class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"
+                  ></div>
+                  <div
+                    class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]"
+                  >
+                    <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                      <p
+                        class="mt-2 text-lg font-medium tracking-tight text-teal-600 max-lg:text-center animate-fade-up"
+                      >
+                        Terlihat Lebih Profesional
+                      </p>
+                      <p
+                        class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center animate-fade-up"
+                      >
+                        Profil kamu bukan sekadar biodata. Tampilkan portofolio,
+                        testimoni brand, dan pencapaian dalam satu halaman
+                        keren.
+                      </p>
+                    </div>
+                    <div
+                      class="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2"
+                    >
+                      <img
+                        class="w-full max-lg:max-w-xs"
+                        src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-performance.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-t-[2rem]"
+                  ></div>
+                </div>
+                <div
+                  class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2 animate-fade-up"
+                >
+                  <div class="absolute inset-px rounded-lg bg-white"></div>
+                  <div
+                    class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]"
+                  >
+                    <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                      <p
+                        class="mt-2 text-lg font-medium tracking-tight text-teal-600 max-lg:text-center animate-fade-up"
+                      >
+                        Statistik yang Meyakinkan
+                      </p>
+                      <p
+                        class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center animate-fade-up"
+                      >
+                        Tampilkan data performa seperti engagement rate,
+                        audience reach, dan niche yang relevan—semua otomatis
+                        ter-update.
+                      </p>
+                    </div>
+                    <div
+                      class="@container flex flex-1 items-center max-lg:py-6 lg:pb-2"
+                    >
+                      <img
+                        class="h-[min(152px,40cqw)] object-cover"
+                        src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-security.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5"
+                  ></div>
+                </div>
+                <div class="relative lg:row-span-2 animate-slide-left">
+                  <div
+                    class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"
+                  ></div>
+                  <div
+                    class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]"
+                  >
+                    <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                      <p
+                        class="mt-2 text-lg font-medium tracking-tight text-teal-600 max-lg:text-center animate-fade-up"
+                      >
+                        Riwayat Kolaborasi
+                      </p>
+                      <p
+                        class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center animate-fade-up"
+                      >
+                        Buktikan pengalamanmu dengan daftar brand yang pernah
+                        bekerja sama denganmu. Bangun kepercayaan sejak awal.
+                      </p>
+                    </div>
+                    <div class="relative min-h-[30rem] w-full grow">
+                      <div
+                        class="absolute top-10 right-0 bottom-0 left-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl"
+                      >
+                        <div class="flex bg-gray-800/40 ring-1 ring-white/5">
+                          <div
+                            class="-mb-px flex text-sm/6 font-medium text-gray-400"
+                          >
+                            <div
+                              class="border-r border-b border-r-white/10 border-b-white/20 bg-white/5 px-4 py-2 text-white"
+                            >
+                              Tetap Aman dan Terkontrol
+                            </div>
+                            <div class="border-r border-gray-600/10 px-4 py-2">
+                              Data kamu tersimpan aman. Kamu bisa atur apa saja
+                              yang ingin ditampilkan atau disembunyikan dari
+                              publik.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="px-6 pt-6 pb-14"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="max-w-5xl px-2 py-3 mx-auto my-16 tracking-wide md:px-4 md:my-20"
+          >
+            <div
+              class="flex justify-center text-teal-600 font-black text-3xl animate-fade-up"
+            >
+              Frequently Asked Questions
+            </div>
+            <div
+              class="grid gap-3 py-8 text-lg leading-6 text-gray-800 md:gap-8 md:grid-cols-1"
+            >
+              <div class="space-y-3">
+                <div
+                  x-data="accordion(1)"
+                  class="relative transition-all bg-white duration-700 border border-teal-600 rounded-xl hover:shadow-2xl animate-fade-up"
+                >
+                  <div
+                    @click="handleClick()"
+                    class="w-full p-4 text-left cursor-pointer"
+                  >
+                    <div class="flex items-center justify-between">
+                      <span class="tracking-wide font-black"
+                        >Apa itu CariKOL?</span
+                      >
+                      <span
+                        :class="handleRotate()"
+                        class="transition-transform duration-500 transform fill-current"
+                      >
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    x-ref="tab"
+                    :style="handleToggle()"
+                    class="relative overflow-hidden transition-all duration-700 max-h-0"
+                  >
+                    <div class="px-6 pb-4 text-gray-600 font-normal">
+                      CariKOL adalah platform yang memudahkan influencer untuk
+                      membuat dan membagikan rate card secara profesional dan
+                      cepat.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  x-data="accordion(2)"
+                  class="relative transition-all duration-700 bg-white border border-teal-600 rounded-xl hover:shadow-2xl animate-fade-up"
+                >
+                  <div
+                    @click="handleClick()"
+                    class="w-full p-4 text-left cursor-pointer"
+                  >
+                    <div class="flex items-center justify-between">
+                      <span class="tracking-wide font-black"
+                        >Siapa saja yang bisa menggunakan CariKOL?</span
+                      >
+                      <span
+                        :class="handleRotate()"
+                        class="transition-transform duration-500 transform fill-current"
+                      >
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    x-ref="tab"
+                    :style="handleToggle()"
+                    class="relative overflow-hidden transition-all duration-700 max-h-0"
+                  >
+                    <div class="px-6 pb-4 text-gray-600 font-normal">
+                      Platform ini bisa digunakan oleh content creator,
+                      influencer, KOL, dan siapa pun yang ingin menampilkan
+                      portofolio media sosial serta tarif kerja sama mereka.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  x-data="accordion(3)"
+                  class="relative transition-all bg-white duration-700 border border-teal-600 rounded-xl hover:shadow-2xl animate-fade-up"
+                >
+                  <div
+                    @click="handleClick()"
+                    class="w-full p-4 text-left cursor-pointer"
+                  >
+                    <div class="flex items-center justify-between">
+                      <span class="tracking-wide font-black"
+                        >Apa saja fitur utama di CariKOL?</span
+                      >
+                      <span
+                        :class="handleRotate()"
+                        class="transition-transform duration-500 transform fill-current"
+                      >
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    x-ref="tab"
+                    :style="handleToggle()"
+                    class="relative overflow-hidden transition-all duration-700 max-h-0"
+                  >
+                    <div class="px-6 pb-4 text-gray-600 font-normal">
+                      Beberapa fitur unggulan termasuk pembuatan rate card
+                      otomatis, integrasi statistik media sosial, portofolio
+                      digital, serta link yang bisa dibagikan ke brand.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  x-data="accordion(4)"
+                  class="relative transition-all bg-white duration-700 border border-teal-600 rounded-xl hover:shadow-2xl animate-fade-up"
+                >
+                  <div
+                    @click="handleClick()"
+                    class="w-full p-4 text-left cursor-pointer"
+                  >
+                    <div class="flex items-center justify-between">
+                      <span class="tracking-wide font-black"
+                        >Apakah CariKOL gratis digunakan?</span
+                      >
+                      <span
+                        :class="handleRotate()"
+                        class="transition-transform duration-500 transform fill-current"
+                      >
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    x-ref="tab"
+                    :style="handleToggle()"
+                    class="relative overflow-hidden transition-all duration-700 max-h-0"
+                  >
+                    <div class="px-6 pb-4 text-gray-600 font-normal">
+                      Ya! Saat ini semua fitur utama dapat digunakan secara
+                      gratis. Kami juga akan menyediakan opsi premium dengan
+                      fitur tambahan di masa depan.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Floating Call Center Button with Hover Text -->
+        <div class="fixed bottom-6 right-6 z-50 group">
+          <a href="tel:0800123456" class="flex items-center space-x-3">
+            <!-- Text (hidden by default) -->
+            <span
+              class="opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100 transition-all duration-300 text-sm bg-teal-600 text-white py-1 px-3 rounded-l-full shadow-lg"
+            >
+              Call for consultation
+            </span>
+
+            <!-- Icon -->
+            <div
+              class="w-14 h-14 bg-teal-600 text-white rounded-full flex items-center justify-center shadow-xl hover:bg-teal-700 transition duration-300"
+              title="Call Center"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.34 4.02a1 1 0 01-.21.95l-2.13 2.13a11.042 11.042 0 005.66 5.66l2.13-2.13a1 1 0 01.95-.21l4.02 1.34a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.163 21 3 14.837 3 7V6a2 2 0 010-1z"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
       </main>
 
-      <script>
-        const detailsElements = document.querySelectorAll("details");
-
-        document.addEventListener("click", function (event) {
-          detailsElements.forEach(function (details) {
-            if (!details.contains(event.target)) {
-              details.removeAttribute("open");
-            }
-          });
-        });
-      </script>
+      <script src="/js/index.js"></script>
     </body>
   </body>
 </html>
