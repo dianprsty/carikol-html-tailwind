@@ -881,66 +881,101 @@
         </div>
         
         
-        <div class="text-center py-12 px-6">
-          <h3 class="font-semibold text-lg mb-3">
-            Bagaimana tanggapan Anda terhadap Pelayanan Kami?
-            <span class="block font-light text-sm mt-1">
-              Klik bintang di bawah untuk memberi penilaian
-            </span>
-          </h3>
-        
-          <div id="star-container" class="flex justify-center space-x-1 my-4"></div>
-        
-          <template id="star-container">
-            <svg xmlns="http://www.w3.org/2000/svg" 
-              fill="none" 
-              viewBox="0 0 24 24" 
-              stroke-width="1.5" 
-              stroke="currentColor" 
-              class="w-4 h-4  hover:text-teal-600 transition-transform duration-150 cursor-pointer">
-              <path stroke-linecap="round" stroke-linejoin="round" 
-                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-            </svg>
-          </template>
-        
-          <p class="font-light text-sm mt-2">
-            Rata-rata rating 4.93 / 5. Jumlah suara: 1607
-          </p>
-        </div>
-        
-      
-        <div class="bg-teal-600 py-2 sm:py-20">
-          <div class="container mx-auto flex flex-col lg:flex-row justify-between items-left px-6 gap-8">
-              <div class="max-w-lg text-center lg:text-left">
-                  <h2 class="text-white font-bold text-3xl mb-4">
-                      Newsletter
-                  </h2>
-                  <p class="text-white">
-                      Selalu jadi yang pertama tahu tentang diskon, promo menarik, dan event spesial dari kami.
-                  </p>
-              </div>
-      
-              <form class="flex items-center bg-teal-800 rounded-lg overflow-hidden w-full lg:w-auto max-w-xl items-right">
-                  <div class="flex items-center px-4 py-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-white mr-2">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                      </svg>
-                      <input type="email" placeholder="Enter your email"
-                          class="bg-transparent text-white placeholder-white outline-none w-full" />
-                  </div>
-                  <button type="submit" class="bg-teal-50 text-teal-600 hover:shadow-teal-300 font-semibold px-4 py-2">
-                      Submit
-                  </button>
-              </form>
-          </div>
-      </div>
+            <div class="text-center p-16">
+              <h3 class="font-semibold text-center mb-4">
+                Bagaimana tanggapan Anda terhadap Pelayanan Kami?
+                <span class="block font-light text-sm">
+                  Klik bintang di bawah untuk memberi penilaian
+                </span>
+              </h3>
             
-            <footer class="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row justify-between w-full px-8 py-6 p-12 gap-6 text-sm">
+              <div id="star-container" class="flex justify-center space-x-2">
+              </div>
+              <template id="star-template">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke-width="1.5" 
+                stroke="currentColor" 
+                class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                </svg>
+              </template>
+      
+              <p class="block font-light text-sm">
+                Average rating 4.93 / 5. Vote count: 1607
+              </p>
+            
+              <script>
+                const container = document.getElementById('star-container');
+                const starTemplate = document.getElementById('star-template');
+                let currentRating = 0;
+            
+                for (let i = 1; i <= 5; i++) {
+                  const star = starTemplate.content.cloneNode(true).querySelector('svg');
+                  star.dataset.index = i;
+            
+                  star.addEventListener('click', () => {
+                    currentRating = i;
+                    updateStars();
+                  });
+            
+                  star.addEventListener('mouseover', () => {
+                    updateStars(i);
+                  });
+            
+                  star.addEventListener('mouseleave', () => {
+                    updateStars();
+                  });
+            
+                  container.appendChild(star);
+                }
+            
+                function updateStars(hoverIndex = currentRating) {
+                  const stars = container.querySelectorAll('svg');
+                  stars.forEach((star, index) => {
+                    if (index < hoverIndex) {
+                      star.classList.remove('text-gray-300');
+                      star.classList.add('text-teal-600');
+                    } else {
+                      star.classList.remove('text-teal-600');
+                      star.classList.add('text-gray-300');
+                    }
+                  });
+                }
+              </script>
+            </div>
+      
+            <div class="flex flex-col lg:flex-row justify-between items-center bg-teal-600 p-10 sm:p-10 gap-6 sm:gap-8">
+              <div class="max-w-lg text-center lg:text-left">
+                <h2 class="text-white font-bold text-3xl mb-2">
+                  Newsletter
+                </h2>
+                <p class="text-white">
+                  Selalu jadi yang pertama tahu tentang diskon, promo menarik, dan event spesial dari kami.
+                </p>
+              </div>
+            
+              <form class="flex items-center bg-teal-800 rounded-lg overflow-hidden w-fit max-w-xl gap-4">
+                <div class="flex items-center px-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                  </svg>
+                  <input type="email" placeholder="Enter your email"
+                    class="bg-transparent text-white placeholder-white outline-none w-3xs" />
+                </div>
+                <button type="submit" class="bg-teal-50 text-teal-600 hover:shadow-teal-300 font-semibold px-4 py-2 m-1 rounded-md">
+                  Submit
+                </button>
+              </form>
+            </div>
+            
+            <footer class="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row justify-between w-full p-12 gap-6 text-sm">
               <div class="max-w-xs mb-6 lg:mb-0">
                 <h1 class="text-3xl font-bold text-left text-teal-600">
                   CariKOL
                 </h1>
-                <p class="text-left text-gray-600">
+                <p class="text-left mt-2 text-gray-600">
                   CariKOL adalah platform digital yang memudahkan influencer dalam membuat rate card profesional secara instan. 
                   Hadir sebagai solusi untuk kebutuhan branding dan presentasi diri para kreator digital.
                 </p>
@@ -971,13 +1006,8 @@
                   <div class="font-bold text-gray-800 pb-2">CONTACT US</div>
             
                   <div class="flex items-center gap-2 mb-1">
-                    <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
-                    stroke-width="1.5" 
-                    stroke="currentColor" 
-                    class="size-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+                      stroke-width="1.5" stroke="currentColor" class="size-6">
                       <path stroke-linecap="round" stroke-linejoin="round" 
                         d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                     </svg>
