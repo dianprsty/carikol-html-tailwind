@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - KOL</title>
+    <link rel="stylesheet" href="../../styles/output.css" />
+    <link rel="stylesheet" href="../../styles/home.css" />
+  </head>
+  <body>
+    <header class="sticky top-0 z-50 w-full shadow-md">
+      <div class="flex items-center justify-between h-16 px-4 md:px-6">
+        <div class="flex items-center">
+          <button
+            id="toggle-sidebar"
+            class="mr-3 text-white transition-colors duration-200 rounded-md hover:bg-teal-700 focus:outline-none md:hidden"
+          >
+            <img src="../../assets/icons/menu.svg" alt="" />
+          </button>
+          <a href="../index.html" class="flex items-center gap-2">
+            <img
+              src="../../assets/images/logo.png"
+              alt=""
+              class="w-6 h-6 md:w-8 md:h-8"
+            />
+            <div class="text-xl font-bold text-teal-600 sm:text-2xl">
+              CariKOL
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="flex items-center justify-center w-8 h-8 bg-white border-2 border-teal-600 rounded-full"
+        >
+          <img src="../../assets/icons/user.svg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <div class="flex flex-1 overflow-x-hidden">
+      <aside
+        id="sidebar"
+        class="fixed bottom-0 left-0 z-20 w-64 transition-transform duration-300 ease-in-out transform -translate-x-full bg-white border-r border-gray-200 shadow-lg top-16 md:translate-x-0"
+      >
+        <div class="flex flex-col h-full py-4 overflow-y-auto">
+          <div class="px-4 mb-6">
+            <div class="flex items-center justify-between">
+              <span id="menu-title" class="text-sm font-medium text-gray-500"
+                >KOL MENU</span
+              >
+            </div>
+          </div>
+
+          <div id="kol-sidebar" class="flex-1">
+            <nav class="px-2 space-y-1">
+              <a
+                href="/html/kol/index.html"
+                class="flex items-center w-full px-3 py-2.5 text-sm rounded-lg transition-all duration-200 cursor-pointer font-medium bg-slate-300"
+              >
+                <span class="flex items-center">
+                  <img
+                    src="../../assets/icons/dashboard.svg"
+                    alt=""
+                    class="w-4 h-4 mr-3"
+                  />
+                  <span>Dashboard</span>
+                </span>
+              </a>
+              <a
+                href="/html/kol/ratecard/index.html"
+                class="flex items-center w-full px-3 py-2.5 text-sm rounded-lg transition-all duration-200 hover:bg-slate-100 cursor-pointer"
+              >
+                <span class="flex items-center">
+                  <img
+                    src="../../assets/icons/ratecard.svg"
+                    alt=""
+                    class="w-4 h-4 mr-3"
+                  />
+                  <span>My Ratecard</span>
+                </span>
+              </a>
+              <a
+                href="#"
+                class="flex items-center w-full px-3 py-2.5 text-sm rounded-lg transition-all duration-200 hover:bg-slate-100 cursor-pointer"
+              >
+                <span class="flex items-center">
+                  <img
+                    src="../../assets/icons/search-check.svg"
+                    alt=""
+                    class="w-4 h-4 mr-3"
+                  />
+                  <span>Explore Ratecard</span>
+                </span>
+              </a>
+              <a
+                href="#"
+                class="flex items-center w-full px-3 py-2.5 text-sm rounded-lg transition-all duration-200 hover:bg-slate-100 cursor-pointer"
+              >
+                <span class="flex items-center">
+                  <img
+                    src="../../assets/icons/compass.svg"
+                    alt=""
+                    class="w-4 h-4 mr-3"
+                  />
+                  <span>Explore Campaign</span>
+                </span>
+              </a>
+              <a
+                href="#"
+                class="flex items-center w-full px-3 py-2.5 text-sm rounded-lg transition-all duration-200 hover:bg-slate-100 cursor-pointer"
+              >
+                <span class="flex items-center">
+                  <img
+                    src="../../assets/icons/shopping-bag.svg"
+                    alt=""
+                    class="w-4 h-4 mr-3"
+                  />
+                  <span>Pesanan</span>
+                </span>
+              </a>
+              <a
+                href="#"
+                class="flex items-center w-full px-3 py-2.5 text-sm rounded-lg transition-all duration-200 hover:bg-slate-100 cursor-pointer"
+              >
+                <span class="flex items-center">
+                  <img
+                    src="../../assets/icons/user.svg"
+                    alt=""
+                    class="w-4 h-4 mr-3"
+                  />
+                  <span>Profil</span>
+                </span>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </aside>
+
+      <main
+        id="main-content"
+        class="flex-1 p-4 transition-all duration-300 md:p-6 bg-gray-50 md:ml-64"
+      >
+        <div
+          id="kol-dashboard"
+          class="space-y-4 duration-300 animate-in fade-in"
+        >
+          <div class="flex items-center justify-between">
+            <h1 class="text-2xl font-bold text-gray-800">Dashboard Brand</h1>
+          </div>
+
+         
+        </div>
+      </main>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleSidebarBtn = document.getElementById("toggle-sidebar");
+        const closeSidebarBtn = document.getElementById("close-sidebar-mobile");
+        const sidebar = document.getElementById("sidebar");
+
+        if (window.innerWidth >= 768) {
+          toggleSidebarBtn.classList.add("md:hidden");
+        }
+
+        toggleSidebarBtn.addEventListener("click", function () {
+          sidebar.classList.toggle("-translate-x-full");
+        });
+
+        closeSidebarBtn.addEventListener("click", function () {
+          sidebar.classList.add("-translate-x-full");
+        });
+
+        window.addEventListener("resize", function () {
+          if (window.innerWidth >= 768) {
+            sidebar.classList.remove("-translate-x-full");
+            toggleSidebarBtn.classList.add("md:hidden");
+          } else {
+            sidebar.classList.add("-translate-x-full");
+            toggleSidebarBtn.classList.remove("md:hidden");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
