@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/output.css" />
+    <title>Document</title>
+  </head>
+  <body
+    class="bg-cover scale-x-[-1] bg-center bg-no-repeat"
+    style="background-image: url('/assets/images/login2.png')"
+  >
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <div
+      class="relative min-h-screen flex flex-col sm:flex-row-reverse gap-24 sm:gap-40 justify-center bg-transparent rounded-3xl mx-4 sm:mx-auto"
+    >
+      <!-- Welcome section (sekarang di kanan) -->
+      <div class="self-center sm:max-w-md xl:max-w-md z-10">
+        <div class="text-gray-300">
+          <div class="flex items-center gap-2 justify-center sm:justify-start">
+            <img
+              src="/assets/images/logo.png"
+              alt=""
+              class="w-6 h-6 md:w-8 md:h-8"
+            />
+            <div class="text-xl font-bold text-teal-600 sm:text-2xl">
+              CariKOL
+            </div>
+          </div>
+          <h1
+            class="my-3 font-black text-white md:text-black text-2xl sm:text-3xl lg:text-4xl"
+          >
+            Welcome
+          </h1>
+          <p class="pr-3 text-sm font-normal text-black mb-10">
+            Join with us to get future Kol Access Member
+          </p>
+          <p class="pr-3 text-sm font-normal opacity-85">
+            We provide to get a Kol with various feature without difficult
+            access <br />
+            and also make end to end access
+          </p>
+        </div>
+      </div>
+
+      <!-- Form section (sekarang di kiri) -->
+      <div class="flex justify-center self-center z-10 w-full sm:w-auto">
+        <div class="p-6 sm:p-12 mx-auto rounded-3xl w-full max-w-md">
+          <div
+            class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]"
+          >
+            <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+              <p
+                class="mt-2 text-lg font-medium tracking-tight text-teal-600 max-lg:text-center animate-fade-up"
+              >
+                Profil Keren, Deal Makin Lancar
+              </p>
+              <p
+                class="max-w-lg mt-2 text-gray-600 text-sm/6 max-lg:text-center animate-fade-up"
+              >
+                Tingkatkan peluang kolaborasi dengan profil influencer yang
+                tampil profesional, rapi, dan meyakinkan.
+              </p>
+            </div>
+            <div
+              class="@container text-white relative min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm"
+            >
+              <div
+                class="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] rounded-b-[12cqw] border-x border-t-[3cqw] border-b-[3cqw] border-gray-700 bg-gray-900 shadow-2xl"
+              >
+                <div
+                  id="signup-form"
+                  style="background-color: white"
+                  class="border-4 border-black form-step opacity-0 px-5 mx-3 mt-3 rounded-t-[12cqw] bg-amber-950"
+                >
+                  <div class="text-center text-black">
+                    <h3
+                      class="border-4 border-black rounded-b-xl mb-3 text-black"
+                    >
+                      Register
+                    </h3>
+                    <h3 class="font-semibold text-black text-2xl mb-2">
+                      Welcome
+                    </h3>
+                    <p class="text-sm opacity-75 mb-2 sm:mb-8">
+                      Let's get started to join with us
+                    </p>
+                  </div>
+
+                  <div class="carousel-container relative">
+                    <div class="inputForm mb-5">
+                      <div class="mb-3 sm:mb-5">
+                        <input
+                          class="w-full text-sm px-4 py-3 bg-gray-200 focus:bg-gray-100 border border-gray-200 rounded-lg focus:outline-none focus:border-purple-400"
+                          type=""
+                          placeholder="Nama Lengkap"
+                        />
+                      </div>
+
+                      <div class="mb-3 sm:mb-5">
+                        <input
+                          class="w-full text-sm px-4 py-3 bg-gray-200 focus:bg-gray-100 border border-gray-200 rounded-lg focus:outline-none focus:border-purple-400"
+                          type=""
+                          placeholder="Username"
+                        />
+                      </div>
+
+                      <div class="mb-3 sm:mb-5">
+                        <input
+                          class="w-full text-sm px-4 py-3 bg-gray-200 focus:bg-gray-100 border border-gray-200 rounded-lg focus:outline-none focus:border-purple-400"
+                          type=""
+                          placeholder="Email"
+                        />
+                      </div>
+
+                      <div
+                        class="relative mb-3 sm:mb-5"
+                        x-data="{ show: true }"
+                      >
+                        <input
+                          placeholder="Password"
+                          :type="show ? 'password' : 'text'"
+                          class="text-sm text-gray-200 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-purple-400"
+                        />
+                        <div
+                          class="flex items-center absolute inset-y-0 right-0 mr-3 text-sm leading-5"
+                        >
+                          <svg
+                            @click="show = !show"
+                            :class="{'hidden': !show, 'block':show }"
+                            class="h-4 text-teal-600"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewbox="0 0 576 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
+                            ></path>
+                          </svg>
+
+                          <svg
+                            @click="show = !show"
+                            :class="{'block': !show, 'hidden':show }"
+                            class="h-4 text-teal-600"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewbox="0 0 640 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="relative" x-data="{ show: true }">
+                        <input
+                          placeholder="Confirm Password"
+                          :type="show ? 'confirmPassword' : 'text'"
+                          class="text-sm text-gray-200 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-purple-400"
+                        />
+                        <div
+                          class="flex items-center absolute inset-y-0 right-0 mr-3 text-sm leading-5"
+                        >
+                          <svg
+                            @click="show = !show"
+                            :class="{'hidden': !show, 'block':show }"
+                            class="h-4 text-teal-600"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewbox="0 0 576 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
+                            ></path>
+                          </svg>
+
+                          <svg
+                            @click="show = !show"
+                            :class="{'block': !show, 'hidden':show }"
+                            class="h-4 text-teal-600"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewbox="0 0 640 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex items-center mb-8 sm:mb-16 justify-between"
+                    >
+                      <div class="text-sm ml-auto">
+                        <a href="#" class="text-black hover:text-teal-600">
+                          Forgot your password?
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 lg:rounded-l-[2rem]"
+          ></div>
+
+          <div class="mt-5 text-center text-gray-300 text-xs">
+            <a href="/html/auth/login.html">
+              <span
+              id="toggle-signup-signin"
+              class="cursor-pointer w-full bg-gray-900 py-5 px-28 rounded-b-3xl text-white hover:text-black"
+              onclick=""
+              >Sign Up</span
+            >
+            </a>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Styles & Script (sama seperti sebelumnya) -->
+      <style>
+        .form-step {
+          transition: opacity 0.5s ease-in-out;
+        }
+        .form-step.show {
+          opacity: 1;
+        }
+      </style>
+      <script>
+        window.addEventListener("load", function () {
+          const signupForm = document.getElementById("signup-form");
+          const signinForm = document.getElementById("signin-form");
+
+          setTimeout(() => {
+            signupForm.classList.add("show");
+          }, 100);
+        });
+
+        function toggleForms() {
+          const signupForm = document.getElementById("signup-form");
+          const signinForm = document.getElementById("signin-form");
+          const toggleText = document.getElementById("toggle-signup-signin");
+
+          signupForm.classList.remove("show");
+          signinForm.classList.remove("show");
+
+          setTimeout(() => {
+            const isSignupVisible = signupForm.style.display !== "none";
+            signupForm.style.display = isSignupVisible ? "none" : "block";
+            signinForm.style.display = isSignupVisible ? "block" : "none";
+
+            toggleText.textContent = isSignupVisible
+              ? "Don't have an account? Sign Up"
+              : "Already have an account? Sign In";
+
+            signupForm.classList.add("show");
+            signinForm.classList.add("show");
+          }, 500);
+        }
+      </script>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+  </body>
+</html>
