@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Ratecard - CariKOL</title>
+    <link rel="stylesheet" href="/styles/output.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
+  </head>
+  <body>
+    <header class="sticky top-0 z-50 w-full bg-white shadow-md">
+      <div class="flex justify-between items-center px-4 h-16 md:px-6">
+        <div class="flex items-center">
+          <button
+            id="toggle-sidebar"
+            class="mr-3 text-white rounded-md transition-colors duration-200 hover:bg-teal-700 focus:outline-none md:hidden"
+          >
+            <img src="/assets/icons/menu.svg" alt="" />
+          </button>
+          <a href="/html/kol/index.html" class="flex gap-2 items-center">
+            <img
+              src="/assets/images/logo.png"
+              alt=""
+              class="w-6 h-6 md:w-8 md:h-8"
+            />
+            <div class="text-xl font-bold text-teal-600 sm:text-2xl">
+              CariKOL
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="flex justify-center items-center w-8 h-8 bg-white rounded-full border-2 border-teal-600"
+        >
+          <img src="/assets/icons/user.svg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <div class="flex overflow-x-hidden flex-1">
+      <aside
+        id="sidebar"
+        class="fixed bottom-0 left-0 top-16 z-20 w-64 bg-white border-r border-gray-200 shadow-lg transition-transform duration-300 ease-in-out transform -translate-x-full md:translate-x-0"
+      >
+        <div class="flex overflow-y-auto flex-col py-4 h-full">
+          <div class="px-4 mb-6">
+            <div class="flex justify-between items-center">
+              <span id="menu-title" class="text-sm font-medium text-gray-500"
+                >KOL MENU</span
+              >
+              <button
+                id="close-sidebar-mobile"
+                class="p-1 text-gray-500 rounded-md hover:bg-gray-100 hover:text-gray-700 md:hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div id="kol-sidebar" class="flex-1">
+            <nav class="px-2 space-y-1">
+              <a
+                href="/html/kol/index.html"
+                class="flex items-center px-3 py-2.5 w-full text-sm rounded-lg transition-all duration-200 cursor-pointer hover:bg-slate-100"
+              >
+                <span class="flex items-center">
+                  <img
+                    src="/assets/icons/dashboard.svg"
+                    alt=""
+                    class="mr-3 w-4 h-4"
+                  />
+                  <span>Dashboard</span>
+                </span>
+              </a>
+              <a
+                href="/html/kol/ratecard/index.html"
+                class="flex items-center px-3 py-2.5 w-full text-sm font-medium rounded-lg transition-all duration-200 cursor-pointer bg-slate-300"
+              >
+                <span class="flex items-center">
+                  <img
+                    src="/assets/icons/ratecard.svg"
+                    alt=""
+                    class="mr-3 w-4 h-4"
+                  />
+                  <span>My Ratecard</span>
+                </span>
+              </a>
+              <a
+                href="#"
+                class="flex items-center px-3 py-2.5 w-full text-sm rounded-lg transition-all duration-200 cursor-pointer hover:bg-slate-100"
+              >
+                <span class="flex items-center">
+                  <img
+                    src="/assets/icons/search-check.svg"
+                    alt=""
+                    class="mr-3 w-4 h-4"
+                  />
+                  <span>Explore Ratecard</span>
+                </span>
+              </a>
+              <a
+                href="#"
+                class="flex items-center px-3 py-2.5 w-full text-sm rounded-lg transition-all duration-200 cursor-pointer hover:bg-slate-100"
+              >
+                <span class="flex items-center">
+                  <img
+                    src="/assets/icons/compass.svg"
+                    alt=""
+                    class="mr-3 w-4 h-4"
+                  />
+                  <span>Explore Campaign</span>
+                </span>
+              </a>
+              <a
+                href="#"
+                class="flex items-center px-3 py-2.5 w-full text-sm rounded-lg transition-all duration-200 cursor-pointer hover:bg-slate-100"
+              >
+                <span class="flex items-center">
+                  <img
+                    src="/assets/icons/shopping-bag.svg"
+                    alt=""
+                    class="mr-3 w-4 h-4"
+                  />
+                  <span>Pesanan</span>
+                </span>
+              </a>
+              <a
+                href="#"
+                class="flex items-center px-3 py-2.5 w-full text-sm rounded-lg transition-all duration-200 cursor-pointer hover:bg-slate-100"
+              >
+                <span class="flex items-center">
+                  <img
+                    src="/assets/icons/user.svg"
+                    alt=""
+                    class="mr-3 w-4 h-4"
+                  />
+                  <span>Profil</span>
+                </span>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </aside>
+
+      <main
+        id="main-content"
+        class="flex-1 p-6 min-h-full bg-gray-50 transition-all duration-300 md:ml-64"
+      >
+        <div class="p-8 mx-auto w-full bg-white rounded-lg shadow-md md:p-10">
+          <div class="flex items-center pb-5 mb-8 border-b border-gray-200">
+            <img
+              src="/assets/icons/ratecard.svg"
+              alt="Ratecard"
+              class="p-1 mr-3 w-6 h-6 text-teal-600 bg-teal-100 rounded-lg"
+            />
+            <h1 class="text-2xl font-bold text-gray-800">
+              Create New Ratecard
+            </h1>
+          </div>
+
+          <form class="">
+            <div class="grid grid-cols-1 gap-x-6 gap-y-6 md:grid-cols-2">
+              <div class="space-y-2">
+                <label
+                  for="platform"
+                  class="block mb-2 text-sm font-medium text-gray-700"
+                  >Account</label
+                >
+                <div class="relative">
+                  <select
+                    id="platform"
+                    name="platform"
+                    class="block px-4 py-3 mt-1 w-full text-sm bg-white rounded-md border border-gray-300 shadow-sm appearance-none focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  >
+                    <option value="">Select Account</option>
+                    <option value="instagram_account" class="flex items-center">
+                      <span> @instagram</span>
+                    </option>
+                    <option value="youtube_account" class="flex items-center">
+                      <span>Youtube Channel</span>
+                    </option>
+                    <option value="tiktok_account" class="flex items-center">
+                      <span>@tiktok</span>
+                    </option>
+                  </select>
+                  <div
+                    class="flex absolute inset-y-0 right-0 items-center px-3 pointer-events-none"
+                  >
+                    <svg
+                      class="w-4 h-4 text-gray-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <label
+                  for="contentType"
+                  class="block mb-2 text-sm font-medium text-gray-700"
+                  >Content Type</label
+                >
+                <div class="relative">
+                  <select
+                    id="contentType"
+                    name="contentType"
+                    class="block px-4 py-3 mt-1 w-full text-sm bg-white rounded-md border border-gray-300 shadow-sm appearance-none focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  >
+                    <option value="">Choose Content Type</option>
+                    <option value="instagram_post">Instagram Post</option>
+                    <option value="instagram_reels">Instagram Reels</option>
+                    <option value="instagram_story">Instagram Story</option>
+                    <option value="instagram_carousel">
+                      Instagram Carousel
+                    </option>
+                    <option value="youtube_video">YouTube Video</option>
+                    <option value="youtube_shorts">YouTube Shorts</option>
+                    <option value="youtube_live">YouTube Live</option>
+                    <option value="tiktok_video">TikTok Video</option>
+                    <option value="tiktok_live">TikTok LIVE</option>
+                  </select>
+                  <div
+                    class="flex absolute inset-y-0 right-0 items-center px-3 pointer-events-none"
+                  >
+                    <svg
+                      class="w-4 h-4 text-gray-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label
+                  for="duration"
+                  class="block mb-2 text-sm font-medium text-gray-700"
+                  >Content Detail</label
+                >
+                <input
+                  type="text"
+                  id="content-detail"
+                  name="content-detail"
+                  class="block px-4 py-3 mt-1 w-full text-sm rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  placeholder="1 Minute Video"
+                />
+              </div>
+
+              <div class="space-y-2">
+                <label
+                  for="price"
+                  class="block mb-2 text-sm font-medium text-gray-700"
+                  >Price</label
+                >
+                <div class="relative mt-1 rounded-md shadow-sm">
+                  
+                  <input
+                    type="number"
+                    id="price"
+                    name="price"
+                    class="block px-4 py-3 w-full text-sm rounded-md border border-gray-300 shadow-sm p-4w-full focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                    placeholder="1000000"
+                  />
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <label
+                  for="ageRange"
+                  class="block mb-2 text-sm font-medium text-gray-700"
+                  >Audience Age Range</label
+                >
+                <input
+                  type="text"
+                  id="ageRange"
+                  name="ageRange"
+                  class="block px-4 py-3 mt-1 w-full text-sm rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  placeholder="18-34 years"
+                />
+              </div>
+
+              <div class="space-y-2">
+                <label
+                  for="genderRatio"
+                  class="block mb-2 text-sm font-medium text-gray-700"
+                  >Audience Gender Ratio</label
+                >
+                <input
+                  type="text"
+                  id="genderRatio"
+                  name="genderRatio"
+                  class="block px-4 py-3 mt-1 w-full text-sm rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  placeholder="70% Wanita, 30% Pria"
+                />
+              </div>
+
+              <div class="space-y-2">
+                <label
+                  for="location"
+                  class="block mb-2 text-sm font-medium text-gray-700"
+                  >Audience Location</label
+                >
+                <input
+                  type="text"
+                  id="location"
+                  name="location"
+                  class="block px-4 py-3 mt-1 w-full text-sm rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  placeholder="Jakarta, Bandung, Surabaya"
+                />
+              </div>
+
+              <div class="space-y-2">
+                <label
+                  for="category"
+                  class="block mb-2 text-sm font-medium text-gray-700"
+                  >Category</label
+                >
+                <div class="flex relative flex-col">
+                  <input
+                    type="text"
+                    id="category"
+                    name="category"
+                    class="block px-4 py-3 mt-1 w-full text-sm rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                    placeholder="Beauty, Lifestyle"
+                  />
+                  <div
+                    class="flex items-center pr-4 pl-1 text-gray-400 pointer-events-none"
+                  >
+                    <span class="text-xs">Separate with commas</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-2 md:col-span-2">
+                <label
+                  for="notes"
+                  class="block mb-2 text-sm font-medium text-gray-700"
+                  >Notes</label
+                >
+                <textarea
+                  id="notes"
+                  name="notes"
+                  rows="4"
+                  class="block px-4 py-3 mt-1 w-full text-sm rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  placeholder="Your Notes"
+                ></textarea>
+              </div>
+            </div>
+
+            <div
+              class="flex justify-end pt-6 mt-4 space-x-4 border-t border-gray-200"
+            >
+              <a
+                href="/html/kol/ratecard/index.html"
+                class="px-5 py-2.5 text-sm font-medium text-gray-700 bg-gray-100 rounded-md transition-colors duration-200 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
+              >
+                Cancel
+              </a>
+              <button
+                type="submit"
+                class="flex items-center px-6 py-2.5 text-sm font-medium text-white bg-teal-600 rounded-md transition-colors duration-200 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+              >
+               
+                Create Ratecard
+              </button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleSidebarBtn = document.getElementById("toggle-sidebar");
+        const closeSidebarBtn = document.getElementById("close-sidebar-mobile");
+        const sidebar = document.getElementById("sidebar");
+
+        if (window.innerWidth >= 768) {
+          toggleSidebarBtn.classList.add("md:hidden");
+        }
+
+        toggleSidebarBtn.addEventListener("click", function () {
+          sidebar.classList.toggle("-translate-x-full");
+        });
+
+        closeSidebarBtn.addEventListener("click", function () {
+          sidebar.classList.add("-translate-x-full");
+        });
+
+        window.addEventListener("resize", function () {
+          if (window.innerWidth >= 768) {
+            sidebar.classList.remove("-translate-x-full");
+            toggleSidebarBtn.classList.add("md:hidden");
+          } else {
+            sidebar.classList.add("-translate-x-full");
+            toggleSidebarBtn.classList.remove("md:hidden");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
