@@ -854,6 +854,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-1 {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -915,6 +919,9 @@
   }
   .border-teal-800 {
     border-color: var(--color-teal-800);
+  }
+  .border-white {
+    border-color: var(--color-white);
   }
   .border-r-white {
     border-right-color: var(--color-white);
@@ -1073,6 +1080,9 @@
   }
   .p-1 {
     padding: calc(var(--spacing) * 1);
+  }
+  .p-1\.5 {
+    padding: calc(var(--spacing) * 1.5);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
