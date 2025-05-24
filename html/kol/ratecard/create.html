@@ -9,15 +9,15 @@
   </head>
   <body>
     <header class="sticky top-0 z-50 w-full bg-white shadow-md">
-      <div class="flex justify-between items-center px-4 h-16 md:px-6">
+      <div class="flex items-center justify-between h-16 px-4 md:px-6">
         <div class="flex items-center">
           <button
             id="toggle-sidebar"
-            class="mr-3 text-white rounded-md transition-colors duration-200 hover:bg-teal-700 focus:outline-none md:hidden"
+            class="mr-3 text-white transition-colors duration-200 rounded-md hover:bg-teal-700 focus:outline-none md:hidden"
           >
             <img src="/assets/icons/menu.svg" alt="" />
           </button>
-          <a href="/html/kol/index.html" class="flex gap-2 items-center">
+          <a href="/html/kol/index.html" class="flex items-center gap-2">
             <img
               src="/assets/images/logo.png"
               alt=""
@@ -30,21 +30,21 @@
         </div>
 
         <div
-          class="flex justify-center items-center w-8 h-8 bg-white rounded-full border-2 border-teal-600"
+          class="flex items-center justify-center w-8 h-8 bg-white border-2 border-teal-600 rounded-full"
         >
           <img src="/assets/icons/user.svg" alt="" />
         </div>
       </div>
     </header>
 
-    <div class="flex overflow-x-hidden flex-1">
+    <div class="flex flex-1 overflow-x-hidden">
       <aside
         id="sidebar"
-        class="fixed bottom-0 left-0 top-16 z-20 w-64 bg-white border-r border-gray-200 shadow-lg transition-transform duration-300 ease-in-out transform -translate-x-full md:translate-x-0"
+        class="fixed bottom-0 left-0 z-20 w-64 transition-transform duration-300 ease-in-out transform -translate-x-full bg-white border-r border-gray-200 shadow-lg top-16 md:translate-x-0"
       >
-        <div class="flex overflow-y-auto flex-col py-4 h-full">
+        <div class="flex flex-col h-full py-4 overflow-y-auto">
           <div class="px-4 mb-6">
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <span id="menu-title" class="text-sm font-medium text-gray-500"
                 >KOL MENU</span
               >
@@ -78,7 +78,7 @@
                   <img
                     src="/assets/icons/dashboard.svg"
                     alt=""
-                    class="mr-3 w-4 h-4"
+                    class="w-4 h-4 mr-3"
                   />
                   <span>Dashboard</span>
                 </span>
@@ -91,7 +91,7 @@
                   <img
                     src="/assets/icons/ratecard.svg"
                     alt=""
-                    class="mr-3 w-4 h-4"
+                    class="w-4 h-4 mr-3"
                   />
                   <span>My Ratecard</span>
                 </span>
@@ -104,7 +104,7 @@
                   <img
                     src="/assets/icons/search-check.svg"
                     alt=""
-                    class="mr-3 w-4 h-4"
+                    class="w-4 h-4 mr-3"
                   />
                   <span>Explore Ratecard</span>
                 </span>
@@ -117,7 +117,7 @@
                   <img
                     src="/assets/icons/compass.svg"
                     alt=""
-                    class="mr-3 w-4 h-4"
+                    class="w-4 h-4 mr-3"
                   />
                   <span>Explore Campaign</span>
                 </span>
@@ -130,7 +130,7 @@
                   <img
                     src="/assets/icons/shopping-bag.svg"
                     alt=""
-                    class="mr-3 w-4 h-4"
+                    class="w-4 h-4 mr-3"
                   />
                   <span>Pesanan</span>
                 </span>
@@ -143,7 +143,7 @@
                   <img
                     src="/assets/icons/user.svg"
                     alt=""
-                    class="mr-3 w-4 h-4"
+                    class="w-4 h-4 mr-3"
                   />
                   <span>Profil</span>
                 </span>
@@ -155,14 +155,14 @@
 
       <main
         id="main-content"
-        class="flex-1 p-6 min-h-full bg-gray-50 transition-all duration-300 md:ml-64"
+        class="flex-1 min-h-full p-6 transition-all duration-300 bg-gray-50 md:ml-64"
       >
-        <div class="p-8 mx-auto w-full bg-white rounded-lg shadow-md md:p-10">
+        <div class="w-full p-8 mx-auto bg-white rounded-lg shadow-md md:p-10">
           <div class="flex items-center pb-5 mb-8 border-b border-gray-200">
             <img
               src="/assets/icons/ratecard.svg"
               alt="Ratecard"
-              class="p-1 mr-3 w-6 h-6 text-teal-600 bg-teal-100 rounded-lg"
+              class="w-6 h-6 p-1 mr-3 text-teal-600 bg-teal-100 rounded-lg"
             />
             <h1 class="text-2xl font-bold text-gray-800">
               Create New Ratecard
@@ -181,7 +181,7 @@
                   <select
                     id="platform"
                     name="platform"
-                    class="block px-4 py-3 mt-1 w-full text-sm bg-white rounded-md border border-gray-300 shadow-sm appearance-none focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                    class="block w-full px-4 py-3 mt-1 text-sm bg-white border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-teal-500 focus:border-teal-500"
                   >
                     <option value="">Select Account</option>
                     <option value="instagram_account" class="flex items-center">
@@ -195,7 +195,7 @@
                     </option>
                   </select>
                   <div
-                    class="flex absolute inset-y-0 right-0 items-center px-3 pointer-events-none"
+                    class="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none"
                   >
                     <svg
                       class="w-4 h-4 text-gray-400"
@@ -225,7 +225,7 @@
                   <select
                     id="contentType"
                     name="contentType"
-                    class="block px-4 py-3 mt-1 w-full text-sm bg-white rounded-md border border-gray-300 shadow-sm appearance-none focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                    class="block w-full px-4 py-3 mt-1 text-sm bg-white border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-teal-500 focus:border-teal-500"
                   >
                     <option value="">Choose Content Type</option>
                     <option value="instagram_post">Instagram Post</option>
@@ -241,7 +241,7 @@
                     <option value="tiktok_live">TikTok LIVE</option>
                   </select>
                   <div
-                    class="flex absolute inset-y-0 right-0 items-center px-3 pointer-events-none"
+                    class="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none"
                   >
                     <svg
                       class="w-4 h-4 text-gray-400"
@@ -270,7 +270,7 @@
                   type="text"
                   id="content-detail"
                   name="content-detail"
-                  class="block px-4 py-3 mt-1 w-full text-sm rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  class="block w-full px-4 py-3 mt-1 text-sm border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
                   placeholder="1 Minute Video"
                 />
               </div>
@@ -282,12 +282,11 @@
                   >Price</label
                 >
                 <div class="relative mt-1 rounded-md shadow-sm">
-                  
                   <input
                     type="number"
                     id="price"
                     name="price"
-                    class="block px-4 py-3 w-full text-sm rounded-md border border-gray-300 shadow-sm p-4w-full focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                    class="block w-full px-4 py-3 text-sm border border-gray-300 rounded-md shadow-sm p-4w-full focus:outline-none focus:ring-teal-500 focus:border-teal-500"
                     placeholder="1000000"
                   />
                 </div>
@@ -303,7 +302,7 @@
                   type="text"
                   id="ageRange"
                   name="ageRange"
-                  class="block px-4 py-3 mt-1 w-full text-sm rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  class="block w-full px-4 py-3 mt-1 text-sm border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
                   placeholder="18-34 years"
                 />
               </div>
@@ -318,7 +317,7 @@
                   type="text"
                   id="genderRatio"
                   name="genderRatio"
-                  class="block px-4 py-3 mt-1 w-full text-sm rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  class="block w-full px-4 py-3 mt-1 text-sm border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
                   placeholder="70% Wanita, 30% Pria"
                 />
               </div>
@@ -333,7 +332,7 @@
                   type="text"
                   id="location"
                   name="location"
-                  class="block px-4 py-3 mt-1 w-full text-sm rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  class="block w-full px-4 py-3 mt-1 text-sm border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
                   placeholder="Jakarta, Bandung, Surabaya"
                 />
               </div>
@@ -344,19 +343,14 @@
                   class="block mb-2 text-sm font-medium text-gray-700"
                   >Category</label
                 >
-                <div class="flex relative flex-col">
+                <div class="relative flex flex-col">
                   <input
                     type="text"
                     id="category"
                     name="category"
-                    class="block px-4 py-3 mt-1 w-full text-sm rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                    class="block w-full px-4 py-3 mt-1 text-sm border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
                     placeholder="Beauty, Lifestyle"
                   />
-                  <div
-                    class="flex items-center pr-4 pl-1 text-gray-400 pointer-events-none"
-                  >
-                    <span class="text-xs">Separate with commas</span>
-                  </div>
                 </div>
               </div>
 
@@ -370,7 +364,7 @@
                   id="notes"
                   name="notes"
                   rows="4"
-                  class="block px-4 py-3 mt-1 w-full text-sm rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  class="block w-full px-4 py-3 mt-1 text-sm border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
                   placeholder="Your Notes"
                 ></textarea>
               </div>
@@ -389,7 +383,6 @@
                 type="submit"
                 class="flex items-center px-6 py-2.5 text-sm font-medium text-white bg-teal-600 rounded-md transition-colors duration-200 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
               >
-               
                 Create Ratecard
               </button>
             </div>
