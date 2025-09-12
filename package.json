@@ -1,11 +1,10 @@
 {
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.4",
-    "tailwindcss": "^4.1.4"
+    "@tailwindcss/cli": "^4.1.7",
+    "tailwindcss": "^4.1.7"
   },
   "scripts": {
     "tw-build": "npx tailwindcss -i ./styles/input.css -o ./styles/output.css",
     "tw-watch": "npx tailwindcss -i ./styles/input.css -o ./styles/output.css --watch"
   }
-
 }

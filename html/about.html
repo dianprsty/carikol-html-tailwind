@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/output.css" />
+    <title>About Us</title>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+</head>
+<body class="bg-white">
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+      <nav class="w-11/12 max-w-6xl mx-auto md:py-4 md:w-11/12">
+        <div class="flex items-center justify-between h-16">
+          <a href="/html" class="flex items-center gap-2">
+            <img
+              src="../assets/images/logo.png"
+              alt=""
+              class="w-6 h-6 md:w-8 md:h-8"
+            />
+            <div class="text-xl font-bold text-teal-600 sm:text-2xl">
+              CariKOL
+            </div>
+          </a>
+
+          <div class="items-center hidden gap-12 md:flex">
+            <details class="relative group">
+              <summary
+                class="flex items-center gap-2 font-medium text-gray-700 list-none cursor-pointer hover:text-teal-600"
+              >
+                For KOL
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </summary>
+              <div
+                class="absolute z-50 mt-2 bg-white rounded-md shadow-md w-max"
+              >
+                <a
+                  href="#"
+                  class="block p-2 px-4 text-sm hover:bg-teal-600 hover:text-white"
+                  >Buat Rate Card Tiktok
+                </a>
+                <a
+                  href="#"
+                  class="block p-2 px-4 text-sm hover:bg-teal-600 hover:text-white"
+                  >Buat Rate Card Instagram</a
+                >
+                <a
+                  href="#"
+                  class="block p-2 px-4 text-sm hover:bg-teal-600 hover:text-white"
+                  >Buat Rate Card Youtube</a
+                >
+              </div>
+            </details>
+
+            <details class="relative group">
+              <summary
+                class="flex items-center gap-2 font-medium text-gray-700 list-none cursor-pointer hover:text-teal-600"
+              >
+                For Brand
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </summary>
+              <div
+                class="absolute z-50 mt-2 bg-white rounded-md shadow-md w-max"
+              >
+                <a
+                  href="#"
+                  class="block p-2 px-4 text-sm hover:bg-teal-600 hover:text-white"
+                  >Cek Rate Card Tiktok
+                </a>
+                <a
+                  href="#"
+                  class="block p-2 px-4 text-sm hover:bg-teal-600 hover:text-white"
+                  >Cek Rate Card Instagram</a
+                >
+                <a
+                  href="#"
+                  class="block p-2 px-4 text-sm hover:bg-teal-600 hover:text-white"
+                  >Cek Rate Card Youtube</a
+                >
+              </div>
+            </details>
+
+            <div class="flex items-center gap-4">
+              <a
+                href="/html/auth/login.html"
+                class="block px-3 py-2 text-center text-white bg-teal-800 border-2 border-teal-800 rounded-full hover:bg-teal-900"
+                >Login</a
+              >
+              <a
+                href="/html/auth/register.html"
+                class="block px-3 py-2 text-center text-teal-800 border-2 border-teal-800 rounded-full hover:text-teal-900 hover:border-teal-900"
+                >Register</a
+              >
+            </div>
+          </div>
+
+          <details class="relative md:hidden group open">
+            <summary class="flex items-center list-none cursor-pointer">
+              <svg
+                class="w-6 h-6 text-gray-700 group-has-[open]:hidden group-has-[closed]:hidden"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </summary>
+
+            <div
+              class="absolute right-0 z-50 p-4 mt-2 space-y-4 text-sm bg-white rounded-md shadow-lg w-60"
+            >
+              <details>
+                <summary class="font-medium text-gray-800 cursor-pointer">
+                  For Brand
+                </summary>
+                <div class="pl-4 mt-1 space-y-1">
+                  <a href="#" class="block hover:text-teal-600">Cari KOL</a>
+                  <a href="#" class="block hover:text-teal-600"
+                    >Kelola Kampanye</a
+                  >
+                  <a href="#" class="block hover:text-teal-600">Analitik</a>
+                </div>
+              </details>
+
+              <details>
+                <summary class="font-medium text-gray-800 cursor-pointer">
+                  For KOL
+                </summary>
+                <div class="pl-4 mt-1 space-y-1">
+                  <a href="#" class="block hover:text-teal-600"
+                    >Buat Rate Card</a
+                  >
+                  <a href="#" class="block hover:text-teal-600">Job Listing</a>
+                  <a href="#" class="block hover:text-teal-600"
+                    >Tips & Edukasi</a
+                  >
+                </div>
+              </details>
+
+              <div
+                class="flex flex-col gap-2 pt-2 border-t border-gray-200 md:flex-row"
+              >
+                <a
+                  href="./login.html"
+                  class="block py-2 text-center text-white bg-teal-800 border-2 border-teal-800 rounded-full hover:bg-teal-900"
+                  >Login</a
+                >
+                <a
+                  href="#"
+                  class="block py-2 text-center text-teal-800 border-2 border-teal-800 rounded-full"
+                  >Register</a
+                >
+              </div>
+            </div>
+          </details>
+        </div>
+      </nav>
+    </header>
+
+    <section class="flex flex-col-reverse items-center justify-between w-11/12 max-w-6xl px-6 py-12 mx-auto md:py-24 md:flex-row x-auto md:w-11/12">
+    <!-- Left Content -->
+    <div class="text-center md:w-1/2 md:text-left">
+      <h2 class="mb-4 text-3xl font-bold text-teal-600 md:text-4xl">ABOUT US</h2>
+      <p class="font-medium leading-relaxed text-black-400">
+        CariKOL didirikan pada tahun 2024 sebagai solusi atas tantangan dalam dunia influencer marketing yang semakin kompleks. 
+        Kami memulai dari kebutuhan sederhana: bagaimana content creator dapat mempresentasikan diri secara profesional, dan bagaimana brand dapat menemukan mitra yang sesuai secara efisien. 
+        Dalam waktu singkat, CariKOL tumbuh menjadi platform yang dipercaya oleh ribuan KOL dan ratusan brand di Indonesia.
+      </p>
+
+      
+    </div>
+
+    <!-- Right Image -->
+    <div class="flex justify-center mb-10 md:w-1/2 md:mb-0">
+      <img src="../assets/images/about-img.jpg" alt="About Us Illustration" class="w-full max-w-md">
+    </div>
+  </section>
+
+
+<section id="visi-misi" class="py-20 bg-gray-50">
+  <div class="relative w-11/12 max-w-6xl mx-auto">
+
+    <!-- JUDUL -->
+    <div class="mb-20 text-center">
+      <h2 class="mb-4 text-3xl font-bold text-teal-600 md:text-4xl">Visi & Misi Kami</h2>
+      <p class="max-w-2xl mx-auto text-lg text-black md:text-xl">
+        Inilah dasar dari setiap langkah yang kami ambil di <span class="font-semibold text-teal-700">CariKOL</span>.
+      </p>
+    </div>
+
+<div class="relative w-full h-[350px] md:h-[400px]">
+  <!-- VISI -->
+  <div class="absolute top-0 left-0 bg-teal-600 text-white p-10 rounded-3xl shadow-lg w-[70%] h-[100%]">
+    <h3 class="mb-4 text-2xl font-bold">VISI</h3>
+    <p class="text-lg leading-relaxed">
+      Menjadi platform terdepan dalam mempertemukan KOL dan Brand secara profesional,
+      transparan, dan efisien di Asia Tenggara.
+    </p>
+  </div>
+
+  <!-- MISI -->
+  <div class="absolute top-[180px] left-1/3 bg-gray-200 text-black p-10 rounded-3xl shadow-xl w-[70%] h-[90%]">
+    <h3 class="mb-4 text-2xl font-bold">MISI</h3>
+    <ul class="space-y-3 text-lg leading-relaxed list-disc list-inside">
+      <li>Mempermudah kreator membuat rate card profesional dalam hitungan menit.</li>
+      <li>Memberikan akses bagi brand untuk menemukan KOL sesuai target audiens dan budget.</li>
+      <li>Menyediakan sistem yang transparan, aman, dan terpercaya dalam kolaborasi digital.</li>
+      <li>Mendorong pertumbuhan komunitas kreatif berbasis data dan kepercayaan.</li>
+    </ul>
+  </div>
+</div>
+  </div>
+</section>
+
+
+<section class="py-16 mt-12 bg-white">
+  <div class="w-11/12 max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-gray-800">Why choose us</h2>
+    <p class="mb-12 text-teal-600">Here's our reason for standing firm about us</p>
+
+    <!-- Grid Cards -->
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Card 1 (Image) -->
+      <div class="flex items-center justify-center h-48 overflow-hidden bg-white shadow-md rounded-xl">
+        <img src="../assets/images/wcu1.jpg" alt="Why Choose Us Image" class="object-contain max-h-40">
+      </div>
+
+      <!-- Card 2 -->
+      <div class="p-6 text-left bg-white shadow-md rounded-xl">
+        <div class="flex items-center gap-3 mb-3">
+          <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 24 24" 
+          fill="currentColor" 
+          class="text-teal-600 size-6">
+            <path 
+            fill-rule="evenodd" 
+            d="M2.25 2.25a.75.75 0 0 0 0 1.5H3v10.5a3 3 0 0 0 3 3h1.21l-1.172 3.513a.75.75 0 0 0 1.424.474l.329-.987h8.418l.33.987a.75.75 0 0 0 1.422-.474l-1.17-3.513H18a3 3 0 0 0 3-3V3.75h.75a.75.75 0 0 0 0-1.5H2.25Zm6.54 15h6.42l.5 1.5H8.29l.5-1.5Zm8.085-8.995a.75.75 0 1 0-.75-1.299 12.81 12.81 0 0 0-3.558 3.05L11.03 8.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l2.47-2.47 1.617 1.618a.75.75 0 0 0 1.146-.102 11.312 11.312 0 0 1 3.612-3.321Z" 
+            clip-rule="evenodd" />
+          </svg>
+
+          <h3 class="text-lg font-semibold text-gray-800">Profesionalisme</h3>
+        </div>
+        <p class="text-sm text-gray-600">
+          Menyediakan platform yang mendukung penampilan dan interaksi yang berkualitas tinggi.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="p-6 text-left bg-white shadow-md rounded-xl">
+        <div class="flex items-center gap-3 mb-3">
+        <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 24 24" 
+        fill="currentColor" 
+        class="text-teal-600 size-6">
+          <path 
+          d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+          <path 
+          fill-rule="evenodd" 
+          d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" 
+          clip-rule="evenodd" />
+        </svg>
+
+          <h3 class="text-lg font-semibold text-gray-800">Transparansi</h3>
+        </div>
+        <p class="text-sm text-gray-600">
+           Semua data dan proses dapat diakses secara jelas oleh kedua belah pihak.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="p-6 text-left bg-white shadow-md rounded-xl">
+        <div class="flex items-center gap-3 mb-3">
+          <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 24 24" 
+          fill="currentColor" 
+          class="text-teal-600 size-6">
+            <path 
+            fill-rule="evenodd" 
+            d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" 
+            clip-rule="evenodd" />
+          </svg>
+
+          <h3 class="text-lg font-semibold text-gray-800">Keamanan</h3>
+        </div>
+        <p class="text-sm text-gray-600">
+          Menjamin kenyamanan dan perlindungan data pengguna.
+        </p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="p-6 text-left bg-white shadow-md rounded-xl">
+        <div class="flex items-center gap-3 mb-3">
+          <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 24 24" 
+          fill="currentColor" 
+          class="text-teal-600 size-6">
+            <path
+             d="M12 .75a8.25 8.25 0 0 0-4.135 15.39c.686.398 1.115 1.008 1.134 1.623a.75.75 0 0 0 .577.706c.352.083.71.148 1.074.195.323.041.6-.218.6-.544v-4.661a6.714 6.714 0 0 1-.937-.171.75.75 0 1 1 .374-1.453 5.261 5.261 0 0 0 2.626 0 .75.75 0 1 1 .374 1.452 6.712 6.712 0 0 1-.937.172v4.66c0 .327.277.586.6.545.364-.047.722-.112 1.074-.195a.75.75 0 0 0 .577-.706c.02-.615.448-1.225 1.134-1.623A8.25 8.25 0 0 0 12 .75Z" />
+            <path 
+            fill-rule="evenodd" 
+            d="M9.013 19.9a.75.75 0 0 1 .877-.597 11.319 11.319 0 0 0 4.22 0 .75.75 0 1 1 .28 1.473 12.819 12.819 0 0 1-4.78 0 .75.75 0 0 1-.597-.876ZM9.754 22.344a.75.75 0 0 1 .824-.668 13.682 13.682 0 0 0 2.844 0 .75.75 0 1 1 .156 1.492 15.156 15.156 0 0 1-3.156 0 .75.75 0 0 1-.668-.824Z" 
+            clip-rule="evenodd" />
+          </svg>
+
+          <h3 class="text-lg font-semibold text-gray-800">Inovasi</h3>
+        </div>
+        <p class="text-sm text-gray-600">
+         Terus mengembangkan fitur dan teknologi sesuai kebutuhan industri.
+        </p>
+      </div>
+
+      <!-- Card 6 (Image) -->
+      <div class="flex items-center justify-center h-48 overflow-hidden bg-white shadow-md rounded-xl">
+        <img src="../assets/images/wcu2.jpg" alt="Why Choose Us Image" class="object-contain max-h-40">
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="w-full p-12 text-sm bg-white">
+        <div
+          class="grid w-full max-w-6xl grid-cols-1 gap-8 mx-auto md:grid-cols-4"
+        >
+          <!-- Kolom 1 -->
+          <div class="space-y-4">
+            <h1 class="text-4xl font-bold text-teal-600">CariKOL</h1>
+            <p class="text-gray-600">
+              CariKOL adalah platform digital yang memudahkan influencer dalam
+              membuat rate card profesional secara instan. Hadir sebagai solusi
+              untuk kebutuhan branding dan presentasi diri para kreator digital.
+            </p>
+            <div>
+              <h3 class="pt-4 pb-1 font-bold text-gray-800">
+                PT. Digital Solution
+              </h3>
+              <p class="text-gray-600">
+                Jl. Kencana Indah Blok A No. 123, Kota Malang, 65144
+              </p>
+            </div>
+            <div class="mt-4">
+              <div class="pb-2 font-bold text-gray-800">CONTACT US</div>
+              <div class="flex items-center gap-2 mb-1">
+                <!-- Icon Email -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  />
+                </svg>
+                <a
+                  href="mailto:support@carikol.id"
+                  class="text-gray-600 hover:text-teal-600"
+                  >support@carikol.id</a
+                >
+              </div>
+
+              <div class="flex items-center gap-2">
+                <!-- Icon WhatsApp -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 448 512"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 
+                            0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 
+                            0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 438.7c-33.2 0-65.7-8.9-94-25.7l-6.7-4
+                            -69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 
+                            0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 
+                            34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6z"
+                  />
+                </svg>
+                <a
+                  href="https://wa.me/6281234567890"
+                  class="text-gray-600 hover:text-teal-600"
+                  >WhatsApp</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Kolom 2 -->
+          <div class="space-y-2">
+            <div class="pb-2 font-bold text-gray-800">OUR SERVICES</div>
+            <div>
+              <a href="#" class="text-gray-600 hover:text-teal-600"
+                >Buat Rate Card TikTok</a
+              >
+            </div>
+            <div>
+              <a href="#" class="text-gray-600 hover:text-teal-600"
+                >Buat Rate Card Instagram</a
+              >
+            </div>
+            <div>
+              <a href="#" class="text-gray-600 hover:text-teal-600"
+                >Buat Rate Card YouTube</a
+              >
+            </div>
+            <div>
+              <a href="#" class="text-gray-600 hover:text-teal-600"
+                >Cari Rate Card KOL TikTok</a
+              >
+            </div>
+            <div>
+              <a href="#" class="text-gray-600 hover:text-teal-600"
+                >Cari Rate Card KOL Instagram</a
+              >
+            </div>
+            <div>
+              <a href="#" class="text-gray-600 hover:text-teal-600"
+                >Cari Rate Card KOL YouTube</a
+              >
+            </div>
+          </div>
+
+          <!-- Kolom 3 -->
+          <div class="space-y-2">
+            <div class="pb-2 font-bold text-gray-800">COMMUNITY</div>
+            <div>
+              <a href="about.html" class="text-gray-600 hover:text-teal-600">About Us</a>
+            </div>
+            <div>
+              <a href="#" class="text-gray-600 hover:text-teal-600">Team</a>
+            </div>
+            <div>
+              <a href="#" class="text-gray-600 hover:text-teal-600"
+                >Testimonial</a
+              >
+            </div>
+            <div>
+              <a href="#" class="text-gray-600 hover:text-teal-600"
+                >Tutorials</a
+              >
+            </div>
+            <div>
+              <a href="#" class="text-gray-600 hover:text-teal-600"
+                >Smart Guides</a
+              >
+            </div>
+          </div>
+
+          <!-- Kolom 4 -->
+          <div class="space-y-2">
+            <div class="pb-2 font-bold text-gray-800">SUPPORT LINKS</div>
+            <div>
+              <a href="#" class="text-gray-600 hover:text-teal-600">Warranty</a>
+            </div>
+            <div>
+              <a href="#" class="text-gray-600 hover:text-teal-600"
+                >Terms of Use</a
+              >
+            </div>
+            <div>
+              <a href="#" class="text-gray-600 hover:text-teal-600"
+                >Privacy Policy</a
+              >
+            </div>
+            <div>
+              <a href="#" class="text-gray-600 hover:text-teal-600"
+                >Cookie Policy</a
+              >
+            </div>
+            <div>
+              <a href="#" class="text-gray-600 hover:text-teal-600"
+                >Cookie Settings</a
+              >
+            </div>
+            <div>
+              <a href="#" class="text-gray-600 hover:text-teal-600">FAQ</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="justify-between px-4 mx-auto max-w-7xl">
+        <hr class="mb-4 border-t border-gray-300" />
+      </div>
+
+      <div
+        class="flex flex-col items-center justify-between gap-4 px-12 md:flex-row"
+      >
+        <p class="text-sm text-gray-600">
+          © CariKol.com 2025, All Rights Reserved
+        </p>
+
+        <div class="flex gap-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 448 512"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="text-gray-600 size-6"
+          >
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 576 512"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="text-gray-600 size-6"
+          >
+            <path
+              d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 448 512"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="text-gray-600 size-6"
+          >
+            <path
+              d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"
+            />
+          </svg>
+        </div>
+      </div>
+    
+</body>
+</html>
